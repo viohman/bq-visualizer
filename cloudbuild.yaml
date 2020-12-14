@@ -27,8 +27,8 @@ steps:
     dir: 'bq-visualizer'
 
   # Deploy to google cloud app engine
-  - name: "gcr.io/cloud-builders/gcloud"
-    args: ["app", "deploy", "--version=prod"]
-    dir: "bq-visualizer"
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['app', 'deploy', '--version=prod']
+    dir: 'bq-visualizer'
 
 
