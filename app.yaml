@@ -3,10 +3,6 @@ api_version: 1
 threadsafe: yes
 
 handlers:
-  # - url: /(.*\.(gif|png|jpg|css|js)(|\.map))$
-  #   static_files: dist/bq-visualizer/\1
-  #   upload: dist/bq-visualizer/(.*)(|\.map)
-
   - url: /(.*)
     static_files: dist/bq-visualizer/index.html
     upload: dist/bq-visualizer/index.html
