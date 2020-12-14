@@ -1,6 +1,5 @@
-runtime: python27
-api_version: 1
-threadsafe: yes
+runtime: python37
+env: standard
 
 handlers:
   - url: /(.*)
@@ -14,5 +13,6 @@ skip_files:
   - ^(.*/)?\..*$
   - ^(.*/)?.*\.json$
   - ^(.*/)?.*\.md$
-  - ^(.*/)?.*\.yaml$
+#  - ^(.*/)?.*\.yaml$
   - ^LICENSE
+  - cloudbuild.yaml
