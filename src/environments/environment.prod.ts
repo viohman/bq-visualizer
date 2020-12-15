@@ -28,7 +28,7 @@ export const environment = {
     // The SPA's id. The SPA is registerd with this id at the auth-server
     clientId:
         '583099218846-i98cjhef48ce134oca8c3nqsv5mif808.apps.googleusercontent.com',
-    clientSecret: 'KVtvKcz_nfCeriSg3xZg1R_n',
+    clientSecret: '-bSKcuv2mYDgpLFgvdIiaF2R',
 
     // Set the scope for the permissions the client should request
     scope: 'profile email https://www.googleapis.com/auth/bigquery',
