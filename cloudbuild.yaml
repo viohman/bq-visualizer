@@ -26,9 +26,9 @@ steps:
     args: ['run', 'build', '--', '--prod' ]
     dir: 'bq-visualizer'
 
-  # Deploy to google cloud app engine
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['app', 'deploy', '--version=prod']
-    dir: 'bq-visualizer'
+artifacts:
+  objects:
+    location: 'gs://${_BQVISUALISER_BUCKET}/deployment_$BUILD_ID'
+    paths: ['tools/bq-visualizer/dist/*']
 
 
